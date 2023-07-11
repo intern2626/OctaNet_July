@@ -1,0 +1,370 @@
+* {
+    Padding: 0;
+    Margin: 0;
+    Box-sizing: border-box;
+}
+
+Body {
+background-color: rgba(144, 144, 238, 0.13);
+    Color: black;
+    Font-family: “Fira Sans”, sans-serif;
+}
+
+Nav {
+    Width: 100%;
+    Height: 80px;
+    display: inline-flexbox;
+    Justify-content: space-between;
+    Padding: 20px 5%;
+    Background-color: #485dd6b2;
+}
+
+Nav .heading {
+    Font-size: 40px;
+    Font-weight: 700;
+    Color: white;
+}
+
+Nav ul {
+    Display: flex;
+    list-style: none;
+}
+
+Nav ul li {
+    Padding: 8px 15px;
+    Border-radius: 10px;
+    Transition: 0.2s ease-in;
+}
+
+Nav ul li a {
+    Color: black;
+    Font-size: 20px;
+    Font-weight: 500;
+    text-decoration:underline;
+    Color: white;
+}
+
+Nav ul li:hover {
+    Background-color: rgba(91, 100, 231, 0.548);
+}
+
+Nav ul li a:hover {
+    Color: white;
+}
+
+Nav .sideMenuButton {
+    Font-size: 30px;
+    Font-weight: bolder;
+    Cursor: pointer;
+    Display: none;
+}
+@media screen and (max-width: 600px) {
+    Nav .sideMenuButton {
+        Display: flex;
+    }
+
+    Nav .navbar {
+        Display: none;
+    }
+
+    .sideNavigationBar {
+        Display: block !important;
+    }
+}
+
+.sideNavigationBar {
+    Height: 100%;
+    Position: fixed;
+    Top: 0;
+    Right: 0%;
+    Background-color: rgb(0, 217, 255);
+    Overflow-x: hidden;
+    Transition: 0.3s ease-in;
+    Padding-top: 60px;
+    Display: none;
+}
+
+.sideNavigationBar a {
+    Padding: 8px 8px 8px 40px;
+    Display: block;
+    Font-size: 25px;
+    Font-weight: 500;
+    Color: #d1d1d1;
+    Transition: 0.3s;
+    Text-decoration: none;
+}
+
+.sideNavigationBar a button {
+    Padding: 10px 20px;
+    Border-radius: 10px;
+    Color: blue;
+    Font-size: 16px;
+    Border-style: none;
+    Font-weight: 700;
+}
+
+.sideNavigationBar a:hover {
+    Color: white;
+}
+
+.sideNavigationBar .closeButton {
+    Position: absolute;
+    Top: 10px;
+    Right: 25px;
+    Font-size: 20px;
+    Margin-left: 50px;
+}
+
+.line {
+    Display: flex;
+    Justify-content: space-between;
+    Align-items: center;
+    Margin: 2% 5%;
+}
+
+.line .side1 {
+    Padding-right: 50px;
+}
+
+.side1 h1 {
+    Font-size: 60px;
+    Margin-bottom: 10px;
+    Color: green;
+}
+
+.side1 button {
+    Width: 200px;
+    Padding: 12px 20px;
+    Border-radius: 20px;
+    Border-style: none;
+    Color: black;
+    Font-size: 17px;
+    Font-weight: 600;
+}
+
+A {
+    Text-decoration: none;
+    Color: black;
+}
+
+/* Header content responsive */
+@media screen and (max-width: 980px) {
+    .side2 img {
+        Width: 350px;
+    }
+
+    .side1 h1 {
+        Font-size: 40px;
+    }
+
+    .side1 p {
+        Font-size: 17px;
+    }
+
+    .line {
+        Margin-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side1 h1 {
+        Font-size: 35px;
+    }
+
+    .line {
+        Flex-direction: column;
+    }
+
+    .line .side1 {
+        Padding: 30px;
+    }
+}
+
+/* section */
+
+Section .topic a {
+    Font-size: 25px;
+    Font-weight: 500;
+    Margin-bottom: 10px;
+}
+
+.about .boxes {
+    Display: flex;
+    Flex-wrap: wrap;
+    Justify-content: space-between;
+}
+
+.about .boxes .box {
+    Margin: 10px 20px;
+    Max-width: calc(100% / 3 – 50px);
+    Text-align: center;
+    Border-radius: 12px;
+    Padding: 30px 10px;
+    Box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+    Cursor: default;
+}
+
+/* Contact Page  */
+
+.contact {
+    Padding: 20px;
+}
+
+.contact .content {
+    Margin: 0 auto;
+    Padding: 30px 0;
+}
+
+.content .title {
+    Width: 80%;
+    Text-align: center;
+    Font-weight: bolder;
+    Font-size: 40px;
+}
+
+.title {
+    Margin-bottom: 30px;
+    Margin-left: 80px;
+}
+
+.contactMenu {
+    Display: flex;
+    Justify-content: space-evenly;
+}
+
+.input2 {
+    Margin-top: 10;
+}
+
+.label1 {
+    Font-size: 18px;
+    Margin-top: 8px;
+    Margin-bottom: 8px;
+    Font-weight: bolder;
+}
+
+.contactMenu .input1 input {
+    Border-radius: 13px;
+    Padding: 6px;
+}
+
+.input2 input {
+    Border-color: rgb(252, 244, 244);
+    Width: 400px;
+}
+
+.button {
+    Margin-top: 12px;
+    Margin-left: 5px;
+}
+
+.button button {
+    Width: 162px;
+    Height: 35px;
+    Border-radius: 12px;
+    Border-color: transparent;
+}
+
+.button button:hover {
+    Background-color: #8cc099;
+}
+
+Button {
+    Width: 162px;
+    Height: 35px;
+    Border-radius: 12px;
+    Border-color: transparent;
+}
+
+Button:hover {
+    Background-color: #8cc099;
+}
+
+.rightside1 {
+    Display: flex;
+    Flex-direction: column;
+    Margin-left: 300px;
+}
+
+.title1 {
+    Font-size: 18px;
+    Margin-top: 8px;
+    Margin-bottom: 5px;
+    Font-weight: bolder;
+}
+
+.content1 {
+    Width: 450px;
+    Margin-top: 2px;
+    Color: grey;
+}
+
+/* Footer */
+Footer {
+    Background: var(--primary-color);
+    Padding: 15px 0;
+    Text-align: center;
+    Font-family: “Poppins”, sans-serif;
+}
+
+Footer .footer span {
+    Font-size: 17px;
+    Font-weight: 400;
+    Color: var(--white-color);
+}
+
+Footer .footer span a {
+    Font-weight: 500;
+    Color: var(--white-color);
+}
+
+Footer .footer span a:hover {
+    Text-decoration: underline;
+}
+
+@media screen and (max-width: 1060px) {
+    .contactMenu {
+        Flex-direction: column;
+        Align-items: center;
+    }
+
+    .rightside1 {
+        Display: flex;
+        Flex-direction: column;
+        Margin-left: 0px;
+    }
+
+    .content1 {
+        Width: 100%;
+        Margin-top: 2px;
+        Color: grey;
+    }
+
+    .side2 img {
+        Width: 95%;
+        Height: 90%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .side2 img {
+        Width: 100%;
+    }
+
+    Section .topic a {
+        Font-size: 20px;
+    }
+
+    Section .topic p {
+        Font-size: 5px;
+    }
+
+    .about .boxes {
+        Display: flex;
+        Flex-direction: column;
+        Align-items: center;
+    }
+
+    .about .boxes .box {
+        Max-width: 70%;
+    }
